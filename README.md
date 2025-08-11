@@ -1,119 +1,118 @@
-# GitHub Pages CV Template
+# Chess Opening Visualizer
 
-A modern, responsive, and customizable CV/resume template that deploys automatically to GitHub Pages. This template features both an interactive stylish version and an ATS-friendly version generated from a single YAML data file.
+An interactive web-based chess opening visualizer that teaches popular chess openings through visual demonstration. Learn chess openings the right way - by seeing the moves played out on an actual board!
 
 ## Features
 
-- **Single Source of Truth**: Update your CV data in one place (`_data/cv.yml`), and both the interactive and ATS-friendly versions will update automatically
-- **Interactive CV**: Modern design with animations, responsive layout, and navigation features
-- **ATS-Friendly Version**: Simplified design that works well with Applicant Tracking Systems
-- **GitHub Pages Integration**: Automatically deploys when you push to your repository
-- **Customizable**: Easy to adapt to your personal style and needs
-- **Print-Friendly**: Both versions are optimized for printing/saving as PDF
+- **Interactive Chess Board**: Visual 8x8 chess board with Unicode chess pieces
+- **Multiple Opening Lines**:
+  - Italian Opening (Classical approach)
+  - Evans Gambit (Aggressive sacrificial attack)
+  - Scandinavian Defense (How to respond to Black's challenge)
+- **Step-by-Step Learning**: Navigate through each move with detailed explanations
+- **Strategic Insights**: Understand the purpose behind each move
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **GitHub Pages Ready**: No server required - runs entirely in the browser
 
 ## Demo
 
-Visit the live demo at [https://root.gurutux.com/](https://root.gurutux.com/)
+Visit the live demo: **[https://yourusername.github.io/chess-opening-visualizer/](https://yourusername.github.io/chess-opening-visualizer/)**
 
-## Quick Start Guide
+## Quick Start
 
 1. **Fork this repository**
-   - Click the "Fork" button at the top-right corner of this repository
+2. **Enable GitHub Pages** in repository settings
+3. **Visit your GitHub Pages URL** to start learning!
 
-2. **Rename your forked repository**
-   - Go to repository Settings > General
-   - Rename it to `yourusername.github.io` (replace 'yourusername' with your GitHub username)
+No installation or setup required - it's ready to use immediately.
 
-3. **Edit your CV data**
-   - Edit the `_data/cv.yml` file to add your personal information, experience, skills, etc.
-   - This is the only file you need to modify to update your CV content
+## What You'll Learn
 
-4. **Customize the site settings (Optional)**
-   - Edit `_config.yml` to update the site title, description, and other Jekyll settings
+### Italian Opening - Classical
+Learn the fundamental principles of chess openings:
+- Central control with e4 and d4
+- Piece development before attack
+- King safety through castling
+- Targeting weak squares (f7)
 
-5. **Customize styles (Optional)**
-   - Modify HTML files if you want to change the layout or styling
+### Evans Gambit - Aggressive Attack
+Experience one of chess's most exciting gambits:
+- Pawn sacrifice for rapid development
+- Central domination
+- Devastating attacking combinations
+- Quick mate threats
 
-6. **View your CV**
-   - Your CV will be automatically published at `https://yourusername.github.io`
-   - The ATS-friendly version will be available at `https://yourusername.github.io/ats-resume.html`
+### Scandinavian Defense Response
+Master how to handle Black's immediate center challenge:
+- Gaining tempo against the enemy queen
+- Superior piece coordination
+- Converting opening advantage to middle game pressure
 
-## Updating Your CV
+## How to Use
 
-To update your CV, simply edit the `_data/cv.yml` file. The structure is intuitive with sections for:
+1. **Choose an Opening**: Select from the dropdown menu
+2. **Navigate Moves**: Use Next/Previous buttons to step through
+3. **Read Explanations**: Each move includes strategic commentary
+4. **Reset**: Start over anytime with the Reset button
 
-- Personal information
-- Professional summary
-- Skills (categorized)
-- Professional experience
-- Education
-- Certifications
-- Projects
+## Chess Notation Guide
 
-After pushing your changes to GitHub, the site will automatically rebuild and deploy.
+- **1. e4** = White's first move, pawn to e4
+- **1... e5** = Black's response, pawn to e5
+- **Nf3** = Knight to f3
+- **0-0** = Castling kingside
+- **!** = Strong move
+- **!?** = Interesting/risky move
 
-## Creating a PDF Version
+## Educational Value
 
-Both versions of the CV are designed to be print-friendly:
+This visualizer helps you understand:
+- **Opening Principles**: Why certain moves are played
+- **Pattern Recognition**: Common piece formations
+- **Strategic Thinking**: Long-term planning in chess
+- **Tactical Awareness**: Immediate threats and opportunities
 
-1. Open your CV in a browser
-2. Press `Ctrl+P` (or `⌘+P` on Mac)
-3. Set destination to "Save as PDF"
-4. Click "Save" or "Print"
+## Technology Stack
 
-For the ATS-friendly version, you can use the "Download PDF" button, which triggers the print dialog.
+- **HTML5**: Semantic structure
+- **CSS3**: Responsive styling with animations
+- **Vanilla JavaScript**: Interactive functionality
+- **Unicode Chess Pieces**: No external images needed
+- **GitHub Pages**: Free hosting
 
-## Customization Options
+## Customization
 
-### Site Configuration
+Want to add your own openings? Edit the `openings` object in the JavaScript section to include:
+- New opening variations
+- Additional move sequences
+- Custom descriptions and explanations
 
-Edit `_config.yml` to change:
-- Site title
-- Email
-- Description
-- Base URL
-- Social media profiles
+## Contributing
 
-### Design Customization
-
-If you want to customize the design:
-
-1. **Interactive CV**: Edit `index.html` - contains the layout and styling for the interactive version
-2. **ATS-friendly CV**: Edit `ats-resume.html` - contains the simplified layout for ATS compatibility
-
-### Custom Domain
-
-To use a custom domain:
-
-1. Add your domain to the `CNAME` file
-2. Configure your domain's DNS settings as described in [GitHub Pages documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)
-
-## Local Development
-
-To develop and test locally:
-
-1. Install [Jekyll](https://jekyllrb.com/docs/installation/)
-2. Clone your repository
-3. Run `bundle install`
-4. Run `bundle exec jekyll serve`
-5. Visit `http://localhost:4000` in your browser
-
-## Structure
-
-```
-├── _config.yml          # Site configuration
-├── _data/
-│   └── cv.yml          # CV data (edit this file to update your CV)
-├── index.html           # Interactive CV template
-├── ats-resume.html      # ATS-friendly CV template
-├── CNAME                # Custom domain configuration (if applicable)
-└── README.md            # This file
-```
+Contributions welcome! Ideas for improvements:
+- Additional opening lines (Sicilian, French, Queen's Gambit)
+- Move highlighting and animations
+- Sound effects
+- PGN import/export
+- Analysis engine integration
 
 ## License
 
-Feel free to use and modify this template for your personal CV.
+Free to use and modify. Perfect for:
+- Chess teachers and coaches
+- Students learning openings
+- Chess clubs and websites
+- Educational projects
 
-## Credits
+## Chess Opening Resources
 
-Original template created by Mahmoud Elshenhab.
+Want to learn more? Check out:
+- [Chess.com Opening Explorer](https://www.chess.com/openings)
+- [Lichess Opening Book](https://lichess.org/analysis)
+- Classical chess opening books by masters
+
+---
+
+**Happy Learning!** ♟️♔
+
+Made with ❤️ for the chess community
