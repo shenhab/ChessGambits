@@ -1,842 +1,1037 @@
----
-layout: default
----
-<!DOCTYPE html>
+position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "4. c3",
+                        description: "Classical continuation: White prepares d4 to challenge the center. This solid approach prioritizes central control over immediate tactics.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', '.', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "4... Nf6",
+                        description: "Black develops the knight, attacking White's e4 pawn and preparing to castle. The position remains balanced with equal chances.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', '.', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', 'n', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', '.', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    }
+                ]
+            },
+            evans: {
+                name: "Evans Gambit - Aggressive Attack!",
+                moves: [
+                    {
+                        move: "1. e4",
+                        description: "White begins with the classic King's pawn opening, staking a claim in the center of the board.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "1... e5",
+                        description: "Black responds symmetrically, setting up for an open game full of tactical possibilities.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "2. Nf3",
+                        description: "Developing with tempo, White immediately puts pressure on Black's central pawn.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "2... Nc6",
+                        description: "Black defends the center pawn, maintaining the balance for now.",
+                        position: [
+                            ['r', '.', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "3. Bc4",
+                        description: "Italian Opening setup - the bishop targets f7, Black's most vulnerable square in the opening phase.",
+                        position: [
+                            ['r', '.', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "3... Bc5",
+                        description: "Black develops symmetrically, but White is about to explode with a shocking pawn sacrifice!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "4. b4!?",
+                        description: "THE EVANS GAMBIT! White sacrifices a pawn for rapid development and attacking chances. One of chess's most romantic openings!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', 'P', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', '.', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "4... Bxb4",
+                        description: "Black accepts the gambit! Taking the pawn seems natural, but White gets tremendous compensation in development and attacking potential.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', 'b', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', '.', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "5. c3",
+                        description: "White attacks the bishop and prepares d4 - gaining crucial tempo! The bishop must move, allowing White to dominate the center.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', 'b', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "5... Ba5",
+                        description: "Black retreats the bishop to safety, but White has gained precious time for the coming assault!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "6. d4",
+                        description: "CENTER EXPLOSION! White opens all lines and seizes massive central control. Black's position starts to look shaky!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', 'P', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "6... exd4",
+                        description: "Black captures, but now White gets the dream setup with pawns on d4 and e4 controlling the entire center!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', 'p', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "7. 0-0",
+                        description: "White castles and prepares the final assault! The king is safe while all pieces are ready to attack. Black is in serious danger!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', 'p', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "7... d6",
+                        description: "Black tries to defend, but the attack is just beginning! White has overwhelming compensation for the sacrificed pawn.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', 'p', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', 'p', 'P', '.', '.', '.'],
+                            ['.', '.', 'P', '.', '.', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "8. cxd4",
+                        description: "EXPLOSIVE! White recaptures with maximum central control, opening the c-file and dominating the board!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', 'p', '.', '.', '.', '.'],
+                            ['b', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "8... Bb6",
+                        description: "Black moves the bishop to safety, but White's attack is unstoppable now!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'b', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', 'p', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "9. Qb3!",
+                        description: "THE KILLER MOVE! The queen joins the attack, targeting both f7 and b7. Black's position is nearly indefensible!",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'b', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', 'Q', 'n', 'p', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', '.', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "9... Qf6",
+                        description: "Black desperately defends f7, but the attack continues! White has overwhelming pressure and multiple threats.",
+                        position: [
+                            ['r', '.', '.', '.', 'k', '.', 'n', 'r'],
+                            ['p', 'b', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', 'Q', 'n', 'p', '.', 'q', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', '.', '.', 'R', 'K', '.']
+                        ]
+                    },
+                    {
+                        move: "10. e5!",
+                        description: "DEVASTATING BREAKTHROUGH! The pawn advance destroys Black's coordination. This is the power of the Evans Gambit - explosive attacks!",
+                        position: [
+                            ['r', '.', '.', '.', 'k', '.', 'n', 'r'],
+                            ['p', 'b', 'p', '.', '.', 'p', 'p', 'p'],
+                            ['.', 'Q', 'n', 'p', '.', 'q', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', 'B', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', 'N', '.', '.'],
+                            ['P', '.', '.', '.', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', '.', '.', 'R', 'K', '.']
+                        ]
+                    }
+                ]
+            },
+            scandinavian: {
+                name: "Against Scandinavian Defense",
+                moves: [
+                    {
+                        move: "1. e4",
+                        description: "White opens with the King's pawn, controlling the center and preparing for rapid development.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "1... d5",
+                        description: "The Scandinavian Defense! Black immediately challenges White's center. This aggressive response leads to sharp, unbalanced positions.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'p', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "2. exd5",
+                        description: "White captures the pawn, opening the center. This is almost always the best response - declining the capture would be very passive.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'P', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "2... Qxd5",
+                        description: "Black recaptures with the queen - the most common choice. Bringing the queen out early breaks opening principles but Black has no better option.",
+                        position: [
+                            ['r', 'n', 'b', '.', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'q', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "3. Nc3",
+                        description: "Perfect! White develops with tempo, attacking the exposed queen. This is why early queen development is usually bad - it becomes a target.",
+                        position: [
+                            ['r', 'n', 'b', '.', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'q', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'N', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', '.', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "3... Qa5",
+                        description: "Black moves the queen to safety while keeping it active. The queen on a5 can be annoying, but White has a lead in development.",
+                        position: [
+                            ['r', 'n', 'b', '.', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['q', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'N', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', '.', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "4. d4",
+                        description: "White continues developing and seizes central control. This is the key advantage against the Scandinavian - superior piece development.",
+                        position: [
+                            ['r', 'n', 'b', '.', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['q', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'P', '.', '.', '.', '.'],
+                            ['.', '.', 'N', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', '.', '.', 'P', 'P', 'P'],
+                            ['R', '.', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "4... Nf6",
+                        description: "Black finally develops a piece, but White already has a comfortable advantage due to superior development and central control.",
+                        position: [
+                            ['r', '.', 'b', '.', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', '.', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', 'n', '.', '.'],
+                            ['q', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', 'P', '.', '.', '.', '.'],
+                            ['.', '.', 'N', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', '.', '.', 'P', 'P', 'P'],
+                            ['R', '.', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.data.cv.personal.name }} - Resume</title>
-  <meta name="description" content="Professional resume of {{ site.data.cv.personal.name }} - {{ site.data.cv.personal.title }}">
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    /* CSS Reset and Base Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #f5f5f5;
-      padding: 20px;
-      scroll-behavior: smooth;
-    }
-    
-    .container {
-      background-color: #fff;
-      padding: 30px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-    }
-    
-    /* Content width for readability on very wide screens */
-    .content-wrapper {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    h1, h2, h3, h4 {
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
-    
-    h1 {
-      font-size: 2.5em;
-      letter-spacing: -0.5px;
-    }
-    
-    h2 {
-      font-size: 1.8em;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s, transform 0.5s;
-    }
-    
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    h3 {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-    }
-    
-    h4 {
-      font-size: 1.1em;
-      font-weight: 400;
-      color: #555;
-      margin-bottom: 8px;
-    }
-    
-    a {
-      color: #3498db;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    
-    a:hover {
-      color: #2980b9;
-      text-decoration: underline;
-    }
-    
-    ul {
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-    
-    li {
-      margin-bottom: 8px;
-    }
-    
-    p {
-      margin-bottom: 15px;
-    }
-    
-    section {
-      margin-bottom: 30px;
-      scroll-margin-top: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.5s, transform 0.5s;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* Header Styles with enhanced visual appeal */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-      position: relative;
-      padding: 20px;
-      background: linear-gradient(to right, #f8f9fa, #ffffff);
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    }
-    
-    .header-left {
-      flex: 2;
-      min-width: 300px;
-      animation: fadeIn 1s ease-in-out;
-    }
-    
-    .header-right {
-      flex: 1;
-      min-width: 250px;
-      text-align: right;
-      animation: slideIn 1s ease-in-out;
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    @keyframes slideIn {
-      from { transform: translateX(30px); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    
-    .header-right p {
-      margin-bottom: 8px;
-      transition: all 0.3s ease;
-    }
-    
-    .header-right p:hover {
-      transform: translateX(-5px);
-    }
-    
-    .header-right i {
-      margin-right: 8px;
-      width: 20px;
-      color: #3498db;
-    }
-
-    /* ATS Resume Link Button */
-    .ats-button-container {
-      text-align: center;
-      margin: 20px 0 30px;
-    }
-    
-    .ats-button {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #3498db;
-      color: white;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: all 0.3s;
-      box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
-    }
-    
-    .ats-button:hover {
-      background-color: #2980b9;
-      text-decoration: none;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 8px rgba(41, 128, 185, 0.3);
-    }
-    
-    .ats-button:active {
-      transform: translateY(1px);
-      box-shadow: 0 2px 4px rgba(41, 128, 185, 0.3);
-    }
-
-    .ats-button i {
-      margin-right: 8px;
-    }
-    
-    /* Table of Contents with interactive highlights */
-    .toc {
-      background-color: #f8f9fa;
-      padding: 20px 25px;
-      border-radius: 8px;
-      margin-bottom: 40px;
-      border-left: 4px solid #3498db;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: all 0.3s;
-    }
-    
-    .toc:hover {
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      transform: translateY(-2px);
-    }
-    
-    .toc h3 {
-      margin-top: 0;
-      margin-bottom: 15px;
-      color: #3498db;
-    }
-    
-    .toc ul {
-      margin-bottom: 0;
-    }
-    
-    .toc a {
-      display: inline-block;
-      margin: 8px 0;
-      position: relative;
-      padding-left: 2px;
-      font-weight: 500;
-    }
-    
-    .toc a:before {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: #3498db;
-      transition: width 0.3s;
-    }
-    
-    .toc a:hover:before {
-      width: 100%;
-    }
-    
-    .toc a.active {
-      color: #2980b9;
-      font-weight: bold;
-    }
-    
-    .toc a.active:before {
-      width: 100%;
-    }
-    
-    /* Summary section with attention-grabbing design */
-    #summary {
-      padding: 25px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
-      border-left: 4px solid #3498db;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      margin-bottom: 40px;
-    }
-    
-    #summary p {
-      font-size: 1.1em;
-      line-height: 1.7;
-    }
-    
-    /* Skills Section - now at the end */
-    .skills-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    
-    .skill-category {
-      flex: 1 0 250px;
-      margin-bottom: 20px;
-      background-color: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: all 0.3s;
-      border-top: 3px solid #3498db;
-    }
-    
-    .skill-category:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    }
-    
-    .skill-category h3 {
-      font-size: 1.2em;
-      color: #3498db;
-      margin-bottom: 15px;
-      padding-bottom: 8px;
-      border-bottom: 1px dashed #e0e0e0;
-    }
-    
-    .skill-category ul li {
-      position: relative;
-      padding-left: 5px;
-      transition: all 0.2s;
-    }
-    
-    .skill-category ul li:hover {
-      transform: translateX(5px);
-      color: #2980b9;
-    }
-    
-    /* Enhanced Experience & Education Timeline */
-    .timeline-item {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 40px;
-      border-left: 2px solid var(--company-color, #3498db);
-      transition: all 0.3s ease;
-    }
-    
-    .timeline-item:hover {
-      transform: translateX(5px);
-    }
-    
-    .timeline-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .timeline-dot {
-      position: absolute;
-      left: -10px;
-      top: 0;
-      width: 18px;
-      height: 18px;
-      background-color: var(--company-color, #3498db);
-      border-radius: 50%;
-      box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.9);
-      transition: all 0.3s;
-    }
-    
-    .timeline-item:hover .timeline-dot {
-      box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.9), 0 0 15px rgba(52, 152, 219, 0.5);
-      transform: scale(1.2);
-    }
-    
-    .timeline-date {
-      font-size: 0.9em;
-      font-weight: bold;
-      color: #7f8c8d;
-      margin-bottom: 8px;
-      transition: color 0.3s;
-    }
-    
-    .timeline-item:hover .timeline-date {
-      color: var(--company-color, #3498db);
-    }
-    
-    .timeline-content {
-      padding: 15px 20px;
-      background-color: #f8f9fa;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-      transition: all 0.3s;
-    }
-    
-    .timeline-item:hover .timeline-content {
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-    
-    /* Enhanced Certification & Projects Styles */
-    .cert-item, .project-item {
-      margin-bottom: 25px;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: #f8f9fa;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-      transition: all 0.3s;
-      border-left: 3px solid #3498db;
-    }
-    
-    .cert-item:hover, .project-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    }
-    
-    .cert-item:last-child, .project-item:last-child {
-      margin-bottom: 0;
-    }
-    
-    .cert-item h3, .project-item h3 {
-      margin-bottom: 10px;
-      color: #2c3e50;
-      transition: color 0.3s;
-    }
-    
-    .cert-item:hover h3, .project-item:hover h3 {
-      color: #3498db;
-    }
-    
-    .cert-meta {
-      font-size: 0.9em;
-      color: #7f8c8d;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1px dashed #e0e0e0;
-    }
-    
-    /* Highlight for important achievements */
-    .key-achievement {
-      position: relative;
-      padding-left: 3px;
-    }
-    
-    .key-achievement:before {
-      content: '';
-      position: absolute;
-      left: -20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 10px;
-      height: 10px;
-      background-color: var(--company-color, #3498db);
-      border-radius: 50%;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    
-    .timeline-item:hover .key-achievement:before {
-      opacity: 1;
-    }
-    
-    /* Footer Styles */
-    footer {
-      margin-top: 60px;
-      padding-top: 30px;
-      border-top: 1px solid #eee;
-      text-align: center;
-      font-size: 0.9em;
-      color: #7f8c8d;
-    }
-    
-    footer p {
-      margin-bottom: 8px;
-    }
-    
-    /* Enhanced Back to top button */
-    .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #3498db;
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 50px;
-      z-index: 99;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.4s;
-      box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
-    }
-    
-    .back-to-top.show {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    .back-to-top:hover {
-      background-color: #2980b9;
-      text-decoration: none;
-      color: white;
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(41, 128, 185, 0.4);
-    }
-    
-    /* Print Styles */
-    @media print {
-      body {
-        background-color: white;
-        padding: 0;
-      }
-      
-      .container {
-        box-shadow: none;
-        padding: 15px;
-      }
-      
-      a {
-        color: #333;
-        text-decoration: none;
-      }
-      
-      .timeline-dot {
-        background-color: #333;
-      }
-      
-      h2 {
-        border-bottom: 2px solid #333;
-        opacity: 1;
-        transform: none;
-      }
-      
-      section {
-        opacity: 1;
-        transform: none;
-      }
-      
-      @page {
-        margin: 15mm;
-      }
-    }
-    
-    /* Responsive customizations */
-    @media (max-width: 768px) {
-      body {
-        padding: 10px;
-      }
-      
-      .container {
-        padding: 15px;
-      }
-      
-      h1 {
-        font-size: 2em;
-      }
-      
-      h2 {
-        font-size: 1.5em;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .header {
-        padding: 15px;
-      }
-      
-      .ats-button {
-        padding: 8px 16px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Opening Visualizer - Learn Chess Openings Interactively</title>
+    <meta name="description" content="Interactive chess opening visualizer. Learn Italian Opening, Evans Gambit, and Scandinavian Defense with step-by-step visual demonstrations.">
+    <meta name="keywords" content="chess, opening, visualizer, Italian opening, Evans gambit, Scandinavian defense, chess tutorial, chess learning">
+    <meta name="author" content="Chess Opening Visualizer">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Chess Opening Visualizer">
+    <meta property="og:description" content="Learn chess openings interactively with visual demonstrations">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/chess-opening-visualizer/">
+    
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chess Opening Visualizer">
+    <meta name="twitter:description" content="Learn chess openings interactively with visual demonstrations">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♟️</text></svg>">
+    
+    <style>
+        /* Modern CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        * {
+            margin: 0;
+        }
+        
+        body {
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Main container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+        
+        /* Main content */
+        .content {
+            padding: 30px;
+        }
+        
+        /* Opening selector */
+        .opening-selector {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .opening-selector label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-right: 15px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        select {
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            background: white;
+            min-width: 280px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        select:hover {
+            border-color: #667eea;
+        }
+        
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        /* Chess board */
+        .board-container {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(8, 65px);
+            grid-template-rows: repeat(8, 65px);
+            border: 4px solid #2c3e50;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .chess-board:hover {
+            transform: scale(1.02);
+        }
+        
+        .square {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .square:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            border-radius: 8px;
+        }
+        
+        .light {
+            background-color: #f0d9b5;
+        }
+        
+        .dark {
+            background-color: #b58863;
+        }
+        
+        .square:hover.light {
+            background-color: #f5e6c8;
+        }
+        
+        .square:hover.dark {
+            background-color: #c19a74;
+        }
+        
+        /* Coordinates */
+        .coordinates {
+            position: absolute;
+            font-size: 11px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.4);
+            pointer-events: none;
+        }
+        
+        .coord-file {
+            bottom: 2px;
+            right: 3px;
+        }
+        
+        .coord-rank {
+            top: 2px;
+            left: 3px;
+        }
+        
+        /* Chess pieces */
+        .piece {
+            font-size: 40px;
+            line-height: 1;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            user-select: none;
+        }
+        
+        .piece:hover {
+            transform: scale(1.2);
+            filter: brightness(1.1);
+        }
+        
+        /* Controls */
+        .controls {
+            text-align: center;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 120px;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+        
+        .btn:disabled {
+            background: #95a5a6;
+            color: white;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+            opacity: 0.6;
+        }
+        
+        .btn:disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        
+        /* Move info */
+        .move-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .move-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .move-info p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+            opacity: 0.95;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #f8f9fa;
+            padding: 25px;
+            text-align: center;
+            border-top: 1px solid #e1e8ed;
+            color: #6c757d;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* GitHub corner */
+        .github-corner {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .github-corner svg {
+            fill: #2c3e50;
+            color: white;
+            position: absolute;
+            top: 0;
+            border: 0;
+            right: 0;
+        }
+        
+        .github-corner:hover .octo-arm {
+            animation: octocat-wave 560ms ease-in-out;
+        }
+        
+        @keyframes octocat-wave {
+            0%, 20%, 60%, 100% {
+                transform: rotate(0);
+            }
+            40%, 80% {
+                transform: rotate(-25deg);
+            }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .chess-board {
+                grid-template-columns: repeat(8, 45px);
+                grid-template-rows: repeat(8, 45px);
+            }
+            
+            .square {
+                width: 45px;
+                height: 45px;
+                font-size: 30px;
+            }
+            
+            .piece {
+                font-size: 30px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            
+            select {
+                min-width: 250px;
+            }
+            
+            .move-info h3 {
+                font-size: 1.5rem;
+            }
+            
+            .move-info p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .chess-board {
+                grid-template-columns: repeat(8, 35px);
+                grid-template-rows: repeat(8, 35px);
+            }
+            
+            .square {
+                width: 35px;
+                height: 35px;
+                font-size: 24px;
+            }
+            
+            .piece {
+                font-size: 24px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="progress-container">
-    <div class="progress-bar" id="progress-bar"></div>
-  </div>
+    <!-- GitHub Corner -->
+    <a href="https://github.com/yourusername/chess-opening-visualizer" class="github-corner" aria-label="View source on GitHub">
+        <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="m0,0 0,250 250,0 0,-250z"/>
+            <path d="m128.3,109.0 c113.8,99.7 119.0,89.6 119.0,89.6 0,0 15.0,15.0 15.0,15.0 0,0 -15.0,15.0 -15.0,15.0 0,0 -15.0,15.0 -15.0,15.0 0,0 0,50.0 0,50.0 0,0 -50.0,0 -50.0,0 0,0 -15.0,-15.0 -15.0,-15.0 0,0 -15.0,-15.0 -15.0,-15.0 0,0 -15.0,-15.0 -15.0,-15.0 0,0 -99.7,-113.8 -99.7,-113.8z" fill="currentColor" class="octo-arm"/>
+            <path d="m115.0,115.0 c114.9,99.5 119.0,89.6 119.0,89.6 0,0 15.0,15.0 15.0,15.0 15.0,0 15.0,-15.0 15.0,-15.0 0,0 0,-50.0 0,-50.0 0,0 -50.0,0 -50.0,0 0,0 -15.0,15.0 -15.0,15.0 0,0 -15.0,15.0 -15.0,15.0 0,0 -15.0,15.0 -15.0,15.0 0,0 -99.5,-114.9 -99.5,-114.9z" fill="currentColor" class="octo-body"/>
+        </svg>
+    </a>
 
-  <div class="container">
-    <div class="content-wrapper">
-      <header class="header">
-        <div class="row w-100">
-          <div class="col-md-8 header-left">
-            <h1>{{ site.data.cv.personal.name }}</h1>
-            <h2 style="opacity: 1; transform: none;">{{ site.data.cv.personal.title }}</h2>
-          </div>
-          <div class="col-md-4 header-right">
-            {% if site.data.cv.personal.email %}<p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.data.cv.personal.email }}">{{ site.data.cv.personal.email }}</a></p>{% endif %}
-            {% if site.data.cv.personal.phone %}<p><i class="fas fa-phone"></i> {{ site.data.cv.personal.phone }}</p>{% endif %}
-            {% if site.data.cv.personal.location %}<p><i class="fas fa-map-marker-alt"></i> {{ site.data.cv.personal.location }}</p>{% endif %}
-            {% if site.data.cv.personal.linkedin %}<p><i class="fab fa-linkedin"></i> <a href="https://{{ site.data.cv.personal.linkedin }}" target="_blank">LinkedIn</a></p>{% endif %}
-            {% if site.data.cv.personal.github %}<p><i class="fab fa-github"></i> <a href="https://{{ site.data.cv.personal.github }}" target="_blank">GitHub</a></p>{% endif %}
-            {% if site.data.cv.personal.website %}<p><i class="fas fa-globe"></i> <a href="https://{{ site.data.cv.personal.website }}" target="_blank">{{ site.data.cv.personal.website }}</a></p>{% endif %}
-          </div>
-        </div>
-      </header>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>♟️ Chess Opening Visualizer ♔</h1>
+            <p>Learn chess openings through interactive visual demonstrations</p>
+        </header>
 
-      <div class="text-center my-4">
-        <a href="ats-resume.html" class="btn btn-primary btn-lg shadow-sm"><i class="fas fa-file-alt me-2"></i> View ATS-Friendly Resume</a>
-      </div>
-
-      <div class="card mb-4">
-        <div class="card-body toc">
-          <h3><i class="fas fa-list"></i> Table of Contents</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item"><a href="#summary" class="nav-link toc-link">Professional Summary</a></li>
-            <li class="nav-item"><a href="#experience" class="nav-link toc-link">Professional Experience</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link toc-link">Education</a></li>
-            <li class="nav-item"><a href="#certifications" class="nav-link toc-link">Certifications</a></li>
-            {% if site.data.cv.projects %}<li class="nav-item"><a href="#projects" class="nav-link toc-link">Projects</a></li>{% endif %}
-            <li class="nav-item"><a href="#skills" class="nav-link toc-link">Skills</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <section id="summary" class="summary card mb-4">
-        <div class="card-body">
-          <h2>Professional Summary</h2>
-          <p>{{ site.data.cv.summary }}</p>
-        </div>
-      </section>
-
-      <section id="experience" class="experience">
-        <h2>Professional Experience</h2>
-        {% assign companies = site.data.cv.experience | map: 'company' | uniq %}
-        {% for company in companies %}
-          {% assign company_class = company | downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' %}
-          {% assign company_jobs = site.data.cv.experience | where: "company", company %}
-          {% for job in company_jobs %}
-            <div class="timeline-item company-{{ company_class }} mb-4" data-company="{{ company_class }}">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">
-                {% if job.end_date == "Present" %}
-                  <span>{{ job.start_date }} - {{ job.end_date }}</span>
-                {% else %}
-                  <span>{{ job.start_date }} - {{ job.end_date }}</span>
-                {% endif %}
-              </div>
-              <div class="card timeline-content">
-                <div class="card-body">
-                  <h3>{{ job.position }}</h3>
-                  <h4>{{ job.company }} | {{ job.location }}</h4>
-                  <ul>
-                    {% for item in job.achievements %}
-                      <li class="{% if forloop.index <= 2 %}key-achievement{% endif %}">{{ item }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
+        <!-- Main content -->
+        <main class="content">
+            <!-- Opening selector -->
+            <div class="opening-selector">
+                <label for="opening">Choose Your Opening to Study:</label>
+                <select id="opening" onchange="loadOpening()" aria-label="Select chess opening">
+                    <option value="italian">🏛️ Italian Opening - Classical</option>
+                    <option value="evans">⚔️ Evans Gambit - Aggressive Attack!</option>
+                    <option value="scandinavian">🛡️ vs Scandinavian Defense</option>
+                </select>
             </div>
-          {% endfor %}
-        {% endfor %}
-      </section>
 
-      <section id="education" class="education">
-        <h2>Education</h2>
-        {% for edu in site.data.cv.education %}
-          <div class="timeline-item mb-4">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">
-              <span>{{ edu.date }}</span>
+            <!-- Chess board -->
+            <div class="board-container">
+                <div class="chess-board" id="board" role="grid" aria-label="Chess board"></div>
             </div>
-            <div class="card timeline-content">
-              <div class="card-body">
-                <h3>{{ edu.degree }}</h3>
-                <h4>{{ edu.institution }} | {{ edu.location }}</h4>
-                {% if edu.details %}<p>{{ edu.details }}</p>{% endif %}
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      </section>
 
-      <section id="certifications" class="certifications">
-        <h2>Certifications</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          {% for cert in site.data.cv.certifications %}
-            <div class="col">
-              <div class="card cert-item h-100 shadow-sm">
-                <div class="card-body">
-                  <h3>{{ cert.name }}</h3>
-                  <div class="cert-meta">
-                    <span><strong>Issuer:</strong> {{ cert.issuer }}</span> • 
-                    <span><strong>Date:</strong> {{ cert.date }}</span> • 
-                    <span><strong>ID:</strong> {{ cert.id }}</span>
-                  </div>
-                  {% if cert.url %}<p><a href="{{ cert.url }}" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fas fa-certificate"></i> View Certificate</a></p>{% endif %}
-                  {% if cert.notes %}<p><em>{{ cert.notes }}</em></p>{% endif %}
-                </div>
-              </div>
+            <!-- Controls -->
+            <div class="controls">
+                <button onclick="previousMove()" id="prevBtn" class="btn btn-secondary" aria-label="Previous move">
+                    ← Previous
+                </button>
+                <button onclick="nextMove()" id="nextBtn" class="btn btn-primary" aria-label="Next move">
+                    Next →
+                </button>
+                <button onclick="resetBoard()" class="btn btn-success" aria-label="Reset to starting position">
+                    🔄 Reset
+                </button>
             </div>
-          {% endfor %}
-        </div>
-      </section>
 
-      {% if site.data.cv.projects %}
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="row">
-          {% for project in site.data.cv.projects %}
-            <div class="col-lg-12 mb-4">
-              <div class="card project-item h-100">
-                <div class="card-body">
-                  <h3>{{ project.title }}</h3>
-                  <p>{{ project.description }}</p>
-                </div>
-              </div>
+            <!-- Move information -->
+            <div class="move-info" id="moveInfo" role="status" aria-live="polite">
+                <h3>Starting Position</h3>
+                <p>Choose an opening above and click "Next" to begin your chess journey!</p>
             </div>
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
-      
-      <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          {% for category in site.data.cv.skills %}
-            <div class="col">
-              <div class="card skill-category h-100 shadow-sm">
-                <div class="card-body">
-                  <h3>{{ category.category }}</h3>
-                  <ul>
-                    {% assign skills = category.items | split: ", " %}
-                    {% for item in skills %}
-                      <li>{{ item }}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
+        </main>
 
-      <footer class="mt-5 pt-3 border-top text-center text-muted">
-        <p>Last updated: {{ site.time | date: '%B %Y' }}</p>
-        <p><a href="ats-resume.html">View ATS-friendly Resume</a></p>
-      </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ for chess enthusiasts | <a href="https://github.com/yourusername/chess-opening-visualizer">View on GitHub</a></p>
+        </footer>
     </div>
-  </div>
 
-  <a href="#" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
-  
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Generate random colors for companies
-      const companyElements = document.querySelectorAll('[data-company]');
-      const companyColors = {};
-      
-      // Get all unique company names
-      const companies = Array.from(companyElements).map(el => el.dataset.company).filter((v, i, a) => a.indexOf(v) === i);
-      
-      // Generate a random color for each company
-      companies.forEach(company => {
-        // Generate a random color that's not too light (for visibility)
-        const hue = Math.floor(Math.random() * 360);
-        const saturation = Math.floor(Math.random() * 40) + 60; // 60-100%
-        const lightness = Math.floor(Math.random() * 20) + 30; // 30-50% (not too light)
-        companyColors[company] = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-      });
-      
-      // Apply colors to timeline items
-      companyElements.forEach(element => {
-        const company = element.dataset.company;
-        const color = companyColors[company];
+    <script>
+        // Chess piece symbols (Unicode)
+        const pieces = {
+            'K': '♔', 'Q': '♕', 'R': '♖', 'B': '♗', 'N': '♘', 'P': '♙',
+            'k': '♚', 'q': '♛', 'r': '♜', 'b': '♝', 'n': '♞', 'p': '♟'
+        };
         
-        // Set the CSS variable for this element
-        element.style.setProperty('--company-color', color);
+        // Starting chess position
+        const startingPosition = [
+            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+            ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+            ['.', '.', '.', '.', '.', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.', '.', '.'],
+            ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+        ];
         
-        // Find the timeline dot within this element and set its color
-        const dot = element.querySelector('.timeline-dot');
-        if (dot) {
-          dot.style.backgroundColor = color;
-        }
-      });
-      
-      // Back to top button functionality
-      const backToTop = document.getElementById('back-to-top');
-      const progressBar = document.getElementById('progress-bar');
-      const sections = document.querySelectorAll('section');
-      const tocLinks = document.querySelectorAll('.toc-link');
-      
-      // Initialize animation for page load
-      setTimeout(() => {
-        document.querySelectorAll('h2').forEach(heading => {
-          heading.classList.add('visible');
-        });
-        
-        document.querySelectorAll('section').forEach((section, index) => {
-          // Add staggered animation
-          setTimeout(() => {
-            section.classList.add('visible');
-          }, 100 + (index * 150));
-        });
-      }, 200);
-      
-      // Update scroll progress and back-to-top button
-      function updateScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (scrollTop / scrollHeight) * 100;
-        
-        if (progressBar) {
-          progressBar.style.width = scrolled + '%';
-        }
-        
-        if (scrollTop > 300) {
-          backToTop.classList.add('show');
-        } else {
-          backToTop.classList.remove('show');
-        }
-        
-        // Update active TOC link
-        let currentSectionId = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          if (scrollTop >= sectionTop - 100) {
-            currentSectionId = section.getAttribute('id');
-          }
-        });
-        
-        tocLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === '#' + currentSectionId) {
-            link.classList.add('active');
-          }
-        });
-      }
-      
-      window.addEventListener('scroll', updateScroll);
-      updateScroll(); // Initial call
-      
-      backToTop.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Smooth scrolling for TOC links
-      tocLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 50,
-              behavior: 'smooth'
-            });
-            
-            // Update URL without page reload
-            history.pushState(null, null, targetId);
-          }
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+        // Chess opening definitions
+        const openings = {
+            italian: {
+                name: "Italian Opening - Classical",
+                moves: [
+                    {
+                        move: "1. e4",
+                        description: "White opens with the King's pawn, immediately controlling the center squares d5 and f5. This is one of the most fundamental chess principles - control the center early!",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "1... e5",
+                        description: "Black responds symmetrically, also claiming central space. This classical response leads to open, tactical games where both sides fight for the initiative.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+                        ]
+                    },
+                    {
+                        move: "2. Nf3",
+                        description: "White develops the knight with tempo, attacking Black's e5 pawn. This follows the opening principle: 'Knights before bishops' and puts immediate pressure on Black.",
+                        position: [
+                            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', '.', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "2... Nc6",
+                        description: "Black defends the e5 pawn with the knight, completing the symmetrical development. Both sides now have equal control of the center.",
+                        position: [
+                            ['r', '.', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', 'B', 'Q', 'K', 'B', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "3. Bc4",
+                        description: "The Italian Opening signature move! White develops the bishop to its most active square, targeting the weak f7 pawn. This square is Black's Achilles' heel in the opening.",
+                        position: [
+                            ['r', '.', 'b', 'q', 'k', 'b', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', '.', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', 'P', '.', '.', '.'],
+                            ['.', '.', '.', '.', '.', 'N', '.', '.'],
+                            ['P', 'P', 'P', 'P', '.', 'P', 'P', 'P'],
+                            ['R', 'N', '.', 'Q', 'K', '.', '.', 'R']
+                        ]
+                    },
+                    {
+                        move: "3... Bc5",
+                        description: "Black develops symmetrically with the Italian Game proper. Both bishops eye their opponent's weak points, creating rich tactical possibilities.",
+                        position: [
+                            ['r', '.', '.', 'q', 'k', '.', 'n', 'r'],
+                            ['p', 'p', 'p', 'p', '.', 'p', 'p', 'p'],
+                            ['.', '.', 'n', '.', '.', '.', '.', '.'],
+                            ['.', '.', 'b', '.', 'p', '.', '.', '.'],
+                            ['.', '.', 'B', '.', '
