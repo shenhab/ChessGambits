@@ -1,20 +1,54 @@
+# Chess Opening Visualizer - GitHub Pages Configuration
+
 # Site settings
-title: Mahmoud Elshenhab - CV
-email: mahmoud.alshinhab@gmail.com
-description: Professional CV of Mahmoud Elshenhab - Staff Compiliance Automation Engineer @OKTA
+title: Chess Opening Visualizer
+description: Interactive chess opening trainer - Learn Italian Opening, Evans Gambit, and Scandinavian Defense
 baseurl: ""
-url: "https://root.gurutux.com"
+url: "https://yourusername.github.io"
+
+# GitHub Pages settings
+github_username: yourusername
+repository: chess-opening-visualizer
+
+# SEO and social
+author: Mahmoud Elshenhab Using Claude
+twitter_username: statswiz
+github_username: shenhab
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
-# Social media profiles
-social:
-  - platform: github
-    user_url: https://github.com/shenhab
-  - platform: linkedin
-    user_url: https://www.linkedin.com/in/Shenhab
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
