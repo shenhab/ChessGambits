@@ -1,0 +1,223 @@
+# CV Data File - Single source of truth for both versions of the resume
+
+# Personal Information
+personal:
+  name: Mahmoud Elshenhab
+  title: Staff Compliance Automation Engineer @Okta
+  email: mahmoud.alshinhab@gmail.com
+  phone: "+353 86 461 9975"
+  location: Kill, Co. Kildare, Ireland
+  linkedin: linkedin.com/in/Shenhab
+  github: github.com/shenhab
+  website: gurutux.com
+  
+# Professional Summary
+summary: >
+  Staff Compliance Automation Engineer with 10+ years of experience in software development, infrastructure automation, and system engineering.
+  Currently at Okta, focused on developing tools and processes to automate compliance evidence collection and reporting, 
+  significantly reducing manual effort while improving data reliability. Previously at ServiceNow, enhanced cloud 
+  infrastructure reliability through proactive monitoring and alert automation. At Amazon Web Services (AWS), led key initiatives to 
+  streamline region builds and patching workflows, reducing cycle times from 40+ days to 7 days, and provided expert-level support 
+  for enterprise customers on complex infrastructure, particularly Relational Database Services (RDS). Skilled in designing 
+  resilient systems, developing automation scripts (Python, Ruby, Bash), and implementing database solutions (MySQL, PostgreSQL, MariaDB) 
+  to improve operational efficiency and eliminate manual intervention.
+
+# Skills
+skills:
+  - category: Cloud Platforms
+    items: AWS, Azure, GCP
+  - category: Infrastructure as Code
+    items: Ansible, Puppet
+  - category: Containerization
+    items: Kubernetes (K8s), LXC on Proxmox
+  - category: Monitoring
+    items: Grafana, Splunk
+  - category: Programming Languages
+    items: Python, Ruby, Bash, JavaScript, HTML, CSS
+  - category: Databases
+    items: MySQL, PostgreSQL, MS SQL Server, Sybase, MariaDB, Amazon Aurora
+  - category: Operating Systems
+    items: Linux (CentOS/RHEL), Windows Server, VMware ESX, Proxmox
+  - category: Web Services
+    items: NginX, Apache HTTP Server, SMTP (Postfix), DNS (Bind), WordPress, Varnish Cache
+  - category: Other
+    items: ServiceNow Platform, Software Debugging, System Development, Services Architecture, Dashboarding, n8n, CI/CD, GitHub Actions, GitHub, Jira, Confluence, Slack
+  - category: Networking
+    items: TCP/IP, DNS, DHCP, VPN, Firewalls, DLNA
+  - category: Diagram as Code
+    items: Mermaid Diagrams
+  - category: CV as Code
+    items: YamlCV ;)
+
+# Professional Experience
+experience:
+  - company: OKTA
+    position: Staff Compliance Automation Engineer
+    location: Dublin, Ireland (Remote)
+    start_date: September 2023
+    end_date: Present
+    achievements:
+      - Developed an internal survey tool to automate the collection of compliance-related information from various teams.
+      - Collaborated with cross-functional teams to ensure the tool met compliance requirements.
+      - Implemented a user-friendly interface to facilitate easy data entry and retrieval.
+      - Designed and implemented a CI pipeline to automate testing the survey tool, ensuring high code quality and reliability.
+      - Mentored junior engineers on best practices for developing secure and efficient software solutions.
+      - working on designing and implementing a project to automate the collection of compliance evidence from various teams.
+
+  - company: ServiceNow
+    position: Staff Site Reliability Engineer
+    location: Dublin, Ireland (Remote)
+    start_date: September 2021
+    end_date: September 2023
+    achievements:
+      - Maintain and improve the operational reliability of the ServiceNow Cloud platform.
+      - Enhance infrastructure stability and performance utilizing internal automation services.
+      - Manage and respond to system alerts, collaborating effectively with customer support teams to ensure timely resolution.
+      - Develop automation processes for alert handling, thereby reducing manual workload and improving response accuracy.
+      - Contribute to the refinement of internal team operational procedures and workflows.
+  
+  - company: Amazon Web Services (AWS)
+    position: System Development Engineer
+    location: Dublin, Ireland
+    start_date: December 2019
+    end_date: November 2021
+    achievements:
+      - Developed automation for AWS networking service region builds, enhancing deployment speed and consistency.
+      - Participated in on-call rotation, assuming ownership for production fleet reliability, maintenance, and incident response.
+      - Engineered automation solutions for service deployments, contributing to improved service quality and reduced release cycle times.
+      - Resolved complex system issues, developed new service features, and enhanced operational automation capabilities.
+      - Resolved a critical software defect related to fleet monitoring by applying expertise in the Gossip protocol.
+      - Served as a subject matter expert in automating patching workflows; led a project reducing patching cycle time from over 40 days to 7 days.
+      - Initiated development of zero-touch build workflows for bastion fleets to minimize manual configuration.
+  
+  - company: Amazon Web Services (AWS)
+    position: System Engineer I
+    location: Dublin, Ireland
+    start_date: May 2018
+    end_date: November 2019
+    achievements:
+      - Developed automation for AWS networking service region builds, enhancing deployment speed and consistency.
+      - Participated in on-call rotation, assuming ownership for production fleet reliability, maintenance, and incident response.
+      - Engineered automation solutions for service deployments, contributing to improved service quality and reduced release cycle times.
+      - Resolved complex system issues, developed new service features, and enhanced operational automation capabilities.
+  
+  - company: Amazon Web Services (AWS)
+    position: Cloud Support Engineer II
+    location: Cape Town, South Africa
+    start_date: October 2017
+    end_date: April 2018
+    achievements:
+      - Provided expert-level technical support to AWS Enterprise customers, diagnosing and resolving complex infrastructure issues, specializing in Relational Database Services (RDS).
+      - Executed database migrations involving MySQL, MariaDB, and Amazon Aurora across multiple AWS regions with minimal downtime.
+      - Conducted in-depth root cause analyses for system and database failures for both customer and internal AWS service teams.
+      - Collaborated with AWS Solution Architects to design and recommend best practices for highly available, durable, and performant database solutions.
+  
+  - company: Amazon Web Services (AWS)
+    position: Cloud Support Engineer I
+    location: Cape Town, South Africa
+    start_date: November 2015
+    end_date: September 2017
+    achievements:
+      - Achieved recognition as an RDS Subject Matter Expert (SME).
+      - Executed numerous database migrations involving MySQL, MariaDB, and Amazon Aurora across multiple AWS regions, consistently achieving minimal downtime (under 5 minutes).
+      - Conducted in-depth root cause analyses for system and database failures for both customer and internal AWS service teams.
+      - Collaborated with AWS Solution Architects to design and recommend best practices for highly available, durable, and performant database solutions.
+      - Advised customers on optimal AWS service selection based on workload requirements, feature needs, and budget constraints.
+      - Guided internal and external clients on application redesign to optimize database communication methods, significantly improving workload performance.
+      - Developed Python and Bash scripts to automate operational tasks for customers.
+      - Identified and reported bugs in AWS internal workflows impacting customer experience; created reproducible test cases facilitating service team investigations and subsequent fleet-wide patches.
+      - Developed automated onboarding training materials for MySQL, MariaDB, and Aurora support.
+      - Mentored and trained new Cloud Support Engineers to proficiency.
+  
+  - company: Freelance
+    position: System Engineer
+    location: Egypt
+    start_date: October 2014
+    end_date: September 2015
+    achievements:
+      - Designed and implemented a home multimedia streaming system leveraging DLNA and Torrent technologies on a Linux platform.
+      - Resolved multi-user access limitations for a local company's Microsoft Access database application, enabling concurrent operations across multiple branches.
+  
+  - company: Link Data Center (LinkDev)
+    position: NIX System Engineer
+    location: Cairo, Egypt
+    start_date: March 2012
+    end_date: October 2014
+    achievements:
+      - Administered Linux servers (primarily CentOS/RHEL) and led project implementations within a data center environment focused on web hosting.
+      - Executed migration of hosting infrastructure from Apache HTTP Server to Nginx.
+      - Designed and implemented distributed media hosting solutions for enhanced performance and scalability.
+      - Developed Bash scripts for automated DNS record migration and proactive service monitoring.
+  
+  - company: International Turnkey Systems (ITS)
+    position: System Administrator
+    location: Cairo, Egypt
+    start_date: October 2011
+    end_date: March 2012
+    achievements:
+      - Administered servers operating Microsoft Windows Server and Linux distributions within a VMware ESX virtualized environment.
+      - Managed database systems including Microsoft SQL Server and Sybase ASE.
+
+# Education
+education:
+  - degree: Bachelor of Computer Sciences
+    institution: Misr Higher Institute for Commerce & Computers
+    location: Mansoura, Egypt
+    date: September 2005 - June 2009
+    details: Grade - Good (70.73%)
+
+# Certifications
+certifications:
+  - name: Microsoft Certified - Azure Fundamentals (AZ-900)
+    issuer: Microsoft
+    date: October 22, 2021
+    id: I003-7698
+    url: https://www.credly.com/badges/53a71064-6981-4123-84cc-c77058ae328d
+  
+  - name: Introduction to Computer Science and Programming Using Python
+    issuer: MITx (edX)
+    date: March 17, 2017
+    id: 05a576b4853640b0bfe7b9b221a9fd5d
+    url: https://courses.edx.org/certificates/05a576b4853640b0bfe7b9b221a9fd5d
+  
+  - name: Cloud Computing Concepts, Part 2
+    issuer: University of Illinois at Urbana-Champaign (Coursera)
+    date: April 27, 2015
+    id: 48W63NBRVF
+    url: https://www.coursera.org/account/accomplishments/certificate/48W63NBRVF
+  
+  - name: Cloud Computing Concepts, Part 1
+    issuer: University of Illinois at Urbana-Champaign (Coursera)
+    date: March 17, 2015
+    id: 4LVSBUDRWC
+    url: https://www.coursera.org/account/accomplishments/certificate/4LVSBUDRWC
+  
+  - name: Red Hat Certified System Administrator (RHCSA) - RHEL 5 (EX200)
+    issuer: Red Hat
+    date: April 16, 2009
+    id: 100-108-729
+    url: https://rhtapps.redhat.com/verify?certId=100-108-729
+  
+  - name: Former Red Hat Certified Technician (RHCT) - RHEL 5 (RH202)
+    issuer: Red Hat
+    date: April 16, 2009
+    id: 100-108-729
+    url: https://rhtapps.redhat.com/verify?certId=100-108-729
+    notes: RHCT was superseded by RHCSA
+
+# Projects
+projects:
+  - title: YamlCV
+    description: >
+      Created a Jekyll-based CV management system that uses YAML as a single source of truth for resume data. 
+      The system generates both an interactive, visually-rich HTML resume and an ATS-friendly version from the same data source.
+      Features responsive design, elegant timeline-based experience visualization, and customizable styling.
+      Built with HTML, CSS, Jekyll/Liquid templating, and JavaScript for interactive elements.
+      Repository available at https://github.com/shenhab/YamlCV
+      
+  - title: Football Player Data Visualization Tool
+    description: >
+      Developed a software application using Python (and relevant data analysis/visualization libraries) to process and visualize 
+      football player statistics sourced from FBref.com. Implemented features enabling comparative analysis of player performances, 
+      designed to make complex statistical data accessible and understandable to a general audience. Continuously exploring 
+      enhancements for football data analysis presentation.

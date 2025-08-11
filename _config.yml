@@ -1,0 +1,20 @@
+# Site settings
+title: Mahmoud Elshenhab - CV
+email: mahmoud.alshinhab@gmail.com
+description: Professional CV of Mahmoud Elshenhab - Staff Compiliance Automation Engineer @OKTA
+baseurl: ""
+url: "https://root.gurutux.com"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social media profiles
+social:
+  - platform: github
+    user_url: https://github.com/shenhab
+  - platform: linkedin
+    user_url: https://www.linkedin.com/in/Shenhab
