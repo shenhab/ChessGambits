@@ -16,7 +16,7 @@ An interactive web-based chess opening visualizer that teaches popular chess ope
 
 ## Demo
 
-Visit the live demo: **[https://yourusername.github.io/chess-opening-visualizer/](https://yourusername.github.io/chess-opening-visualizer/)**
+Visit the live demo: **[https://shenhab.github.io/chess-opening-visualizer/](https://shenhab.github.io/chess-opening-visualizer/)**
 
 ## Quick Start
 
